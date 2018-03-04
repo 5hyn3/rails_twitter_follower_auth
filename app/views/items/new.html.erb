@@ -1,0 +1,11 @@
+<%= form_for(@item, url: "/items") do |f| %>
+
+  <%= f.label :text %>
+  <%= f.text_field :text %>
+
+  <%= f.label :only_followers %>
+  <%= f.check_box :only_followers %>
+
+
+  <%= f.submit "submit"%>
+<% end %>
